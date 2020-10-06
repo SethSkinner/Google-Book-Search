@@ -3,7 +3,7 @@ const db = require('../models');
 
 module.exports = {
 
-    findAll: function(req, res) {
+    findAll: (req, res) => {
 
         db.Book
             .find(req.query)
@@ -13,7 +13,7 @@ module.exports = {
 
     },
 
-    findById: function(req, res) {
+    findById: (req, res) => {
 
         db.Book
             .findById(req.params.id)
@@ -22,7 +22,7 @@ module.exports = {
 
     },
 
-    create: function(req, res) {
+    create: (req, res) => {
 
         db.Book
             .create(req.body)
@@ -31,7 +31,7 @@ module.exports = {
 
     },
 
-    update: function(req, res) {
+    update: (req, res) => {
 
         db.Book
             .findOneAndUpdate({ _id: req.params.id }, req.body)
@@ -40,7 +40,7 @@ module.exports = {
 
     },
 
-    remove: function(req, res) {
+    remove: (req, res) => {
 
         db.Book 
             .findById({ _id: req.params.id })
