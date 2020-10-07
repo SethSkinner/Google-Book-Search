@@ -38,7 +38,7 @@ export function ListItem({
           <Col size="xs-8 sm-9">
             <h3>
 
-                title}
+                {title}
                 
             </h3>
 
@@ -77,5 +77,5 @@ export function ListItem({
     </li>
 
   );
-  
+
 }
