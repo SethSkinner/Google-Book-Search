@@ -1,4 +1,4 @@
-mport React from "react";
+import React from "react";
 import Thumbnail from "../Thumbnail";
 import { Container, Row, Col } from "../Grid";
 import "./style.css";
