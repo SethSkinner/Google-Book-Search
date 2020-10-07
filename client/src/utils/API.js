@@ -2,7 +2,7 @@ import axios from 'axios';
 
 require('dotenv').config();
 
-const API_KEY = 'AIzaSyBgP2ElXNk0pOcLccuI3Qc7nji5w5Pvg4g';
+const API_KEY = '';
 
 export default {
 
