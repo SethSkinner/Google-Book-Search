@@ -18,10 +18,8 @@ if (process.env.NODE_ENV === 'production') {
 
 app.use(routes);
 
-let MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/googlebooks';
-
-mongoose.Promise = Promise;
-mongoose.connect(MONGODB_URI, {useNewUrlParser: true});
+// Connect to the Mongo DB
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks");
 
 app.listen(PORT, function() {
 
